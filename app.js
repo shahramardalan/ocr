@@ -14,7 +14,7 @@ fileBrowser.onchange = () => {
 
 convertBtn.onclick = () => {
   textArea.innerHTML = "";
-  const conv = new tesseract.tesseractWorker();
+  const conv = new Tesseract.TesseractWorker();
   conv
     .recognize(fileBrowser.files[0])
     .progress((res) => {

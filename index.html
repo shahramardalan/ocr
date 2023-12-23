@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- (A) LOAD TESSERACT  -->
+    <!-- https://cdnjs.com/libraries/tesseract.js -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.1.1/tesseract.min.js"
+    ></script>
     <title>Document</title>
   </head>
   <body>
-    <div>
-      <input type="file" />
-      <button>Convert</button>
-    </div>
-    <div class="progress"></div>
-    <div>
-      <img src="" alt="" />
-      <textarea placeholder="text"></textarea>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/0.1.1/tesseract.min.js"></script>
-    <script src="/app.js"></script>
+    <!-- (B) WEBCAM & RESULT -->
+    <video id="vid" width="320" height="240" autoplay></video>
+    <button id="go">Go!</button>
+    <textarea id="result" rows="15" cols="50"></textarea>
+
+    <script src="/index.js"></script>
   </body>
 </html>
