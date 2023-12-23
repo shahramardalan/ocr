@@ -16,8 +16,8 @@ var webkam = {
       .then(async (stream) => {
         // (A2-1) CREATE ENGLISH WORKER
         webkam.worker = await Tesseract.createWorker();
-        await webkam.worker.loadLanguage("eng");
-        await webkam.worker.initialize("eng");
+        await webkam.worker.loadLanguage("tur");
+        await webkam.worker.initialize("tur");
 
         // (A2-2) WEBCAM LIVE STREAM
         webkam.hVid.srcObject = stream;
